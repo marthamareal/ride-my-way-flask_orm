@@ -3,7 +3,7 @@ from flask import Flask, Blueprint, jsonify
 from flask_restplus import Api
 from flask_migrate import Migrate
 from flask_script import Manager
-from .utilities.base_validator import ValidationError
+from .utilities import ValidationError
 
 app_blue_print = Blueprint('app_blue_print', __name__, url_prefix='/api')
 
@@ -28,7 +28,7 @@ def create_app(config_type):
     # set database according to the environment 
     app.config.from_object(config_type)
 
-    from database import db
+    from .models import db
     # connect app to the db
     db.init_app(app)
     

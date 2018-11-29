@@ -6,7 +6,7 @@
 from flask import request
 # Third party imports
 from functools import wraps
-from .base_validator import ValidationError
+from .. import ValidationError
 
 
 def validate_json_data(func):

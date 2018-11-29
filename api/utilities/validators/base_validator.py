@@ -1,5 +1,3 @@
-from flask import Blueprint, jsonify
-
 class ValidationError(Exception):
 
     def __init__(self, error, status_code=400):
@@ -11,4 +9,3 @@ class ValidationError(Exception):
     def to_dict(self):
         return self.error
 
-    

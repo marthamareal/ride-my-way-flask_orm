@@ -11,6 +11,9 @@ clone the repository
      $ git clone https://github.com/marthamareal/ride-my-way-flask-orm.git 
 ```
 
+
+- create a .env file and add variables in the .env.sample file
+
 - check if you have python installed 
 ```
     $ python --version
@@ -47,16 +50,15 @@ clone the repository
 
 - run 
 ``` 
-    $ flask db init  # to automatically generate the migrations folder
+    $ flask db init         # to automatically generate the migrations folder
 ```
 **Note** if you dont have migrations folder, apply migrations
 ```
-    $ flask db migrate 
-```
+    $ flask db migrate   
+    
+    and
 
-**Note:** on making changes to the models, apply new migrations and update the versions
-```   
-    $ flask db upgrade   
+    $ flask db upgrade       # apply new migrations and update the versions
 ```
 
 ## Start the project
