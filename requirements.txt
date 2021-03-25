@@ -37,7 +37,7 @@ pycodestyle==2.4.0
 PyJWT==1.6.4
 pylint==1.9.3
 pytz==2018.4
-PyYAML==3.13
+PyYAML==5.4
 requests==2.19.1
 singledispatch==3.4.0.3
 six==1.11.0
